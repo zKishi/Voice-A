@@ -1195,7 +1195,7 @@ SYSCALL_DEFINE1(newuname, struct new_utsname __user *, name)
 	    !strncmp(current->comm, "netbpfload", 10) ||
 	    !strncmp(current->comm, "netd", 4) ||
 	    !strncmp(current->comm, "uprobestats", 11)) {
-		strcpy(tmp.release, "5.4.289");
+		strcpy(tmp.release, "5.10.289");
 		pr_debug("fake uname: %s release=%s\n",
 			 current->comm, tmp.release);
 	}
