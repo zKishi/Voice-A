@@ -130,7 +130,7 @@ jobs:
         run: |
           set -eo pipefail
           rm -rf kernel/KernelSU
-          git clone https://github.com/HIZVOICE/FinaSU.git kernel/KernelSU
+          git clone https://github.com/LyraVoid/FinaSU.git kernel/KernelSU
           git -C kernel/KernelSU checkout -b build "$FINASU_SHA"
           COUNT="$(git -C kernel/KernelSU rev-list --count HEAD)"
           echo "FinaSU commit count: $COUNT (expect $FINASU_COMMITS)"
